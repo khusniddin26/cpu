@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>CodePen - responsive navbar with dropdown menu</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><link rel="stylesheet" href="cpu.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!----Body link---->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<script>
+  // gets the "available" logical processors count
+let logicalProcessorCount = navigator.hardwareConcurrency;
+console.log("The current device has " + logicalProcessorCount + " logical cores");
+//alert(logicalProcessorCount);
+</script>
+<script src="node.js"></script>
+<body>
+<!-- partial:index.partial.html -->
+<header id="nav-menu" aria-label="navigation bar">
+  <div class="container">
+    <div class="nav-start">
+      <a class="logo" href="/">
+        <img src="cpu5.png" />
+      </a>
+      <p id="logow">H  E  R  Z</p>
+      <h1 id="word">H  E  R  Z</h1>
+      <nav class="menu">
+        <ul class="menu-bar">
+          <li>
+            <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+              Browse
+              <i class="bx bx-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="dropdown1" class="dropdown">
+              <ul role="menu">
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#best-of-the-day">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/botd.svg" class="icon" />
+                    <div>
+                      <span class="dropdown-link-title">Best of the day</span>
+                      <p>Shorts featured today by curators</p>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#featured-streams">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/fs.svg" class="icon" />
+                    <div>
+                      <span class="dropdown-link-title">Featured Streams</span>
+                      <p>Leading creatives livestreams</p>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#subscriptions">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/sp.svg" class="icon" />
+                    <div>
+                      <span class="dropdown-link-title">Subscriptions</span>
+                      <p>Gain exclusive access</p>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#creative-feed">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/cf.svg" class="icon" />
+                    <div>
+                      <span class="dropdown-link-title">Creative Feed</span>
+                      <p>See trending creations</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <ul role="menu">
+                <li class="dropdown-title">
+                  <span class="dropdown-link-title">Browse by apps</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#adobe-xd">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/xd.svg" />
+                    Adobe XD
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#after-effect">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/ae.svg" />
+                    After Effect
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#sketch">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/sketch.svg" />
+                    Sketch
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#indesign">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/indesign.svg" />
+                    Indesign
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#figma">
+                    <img src="https://raw.githubusercontent.com/Evavic44/responsive-navbar-with-dropdown/main/assets/icons/figma.svg" />
+                    Figma
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover">
+              Discover
+              <i class="bx bx-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="dropdown2" class="dropdown">
+              <ul role="menu">
+                <li>
+                  <span class="dropdown-link-title">Browse Categories</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#branding">Branding</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#illustrations">Illustration</a>
+                </li>
+              </ul>
+              <ul role="menu">
+                <li>
+                  <span class="dropdown-link-title">Download App</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#mac-windows">MacOS & Windows</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#linux">Linux</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="nav-link" href="/">Jobs</a></li>
+          <li><a class="nav-link" href="/">Livestream</a></li>
+          <li><a class="nav-link" href="/">About</a></li>
+          <li><a class="nav-link" href="/">Community</a></li>
+          <li>  <a class="nav-link" href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-end">
+      <div class="right-container">
+        <form class="search" role="search">
+          <input type="search" name="search" placeholder="Search" />
+          <i class="bx bx-search" aria-hidden="true"></i>
+        </form>
+        <a href="#profile">
+        <button></button>
+        </a>
+        <button class="btn btn-primary">Create</button>
+      </div>
+
+      <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+        <i class="bx bx-menu" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="home">
+<div class="boxes">
+  <div class="box1">
+    <h1><span>What is a CPU?</span>  A Central Processing Unit is the most important component of a computer system. A CPU is a hardware that performs data input/output, processing and storage functions for a computer system. </h1>
+  <br>
+  <p>A CPU is a hardware that performs data input/output, processing and storage functions for a computer system. A CPU can be installed into a CPU socket. These sockets are generally located on the motherboard. CPU can perform various data processing operations. CPU can store data, instructions, programs, and intermediate results.</p>
+  <br>
+<div class="buton">
+  <a id="button1" href="#">Know More</a>
+  </div>
+</div>
+  <div class="box2">
+    <img src="icon.png">
+  </div>
+</div>
+</section>
+
+
+<section class="about">
+  <div class="actor">
+    <div class="actor__prefix">-</div>
+    <div id="vader" class="actor__content"></div>
+  </div>
+
+  <div class="actor">
+    <div class="actor__prefix">-</div>
+    <div id="luke" class="actor__content"></div>
+  </div>
+
+  <p>This is a demo of <a href="https://github.com/Zhouzi/TheaterJS" target="_blank">TheaterJS</a>.</p>
+  <p>It's forkable/editable on <a href="https://codepen.io/Zhouzi/pen/JoRazP" target="_blank">CodePen</a>.</p>
+  <p>Everything you need to know is on its <a href="https://github.com/Zhouzi/TheaterJS" target="_blank">GitHub</a> repository.</p>
+  <p>And it'd be really nice to share the force on <a href="https://twitter.com/home?status=TheaterJS%2C%20a%20typing%20effect%20mimicking%20human%20behavior.%20https%3A%2F%2Fgithub.com%2FZhouzi%2FTheaterJS%20via%20%40zh0uzi" target="_blank">Twitter</a> or <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/Zhouzi/TheaterJS" target="_blank">Facebook</a>.</p>
+  
+</section>
+<!-- partial -->
+  <script  src="cpu.js"></script>
+<!-- partial -->
+<!-----<script src='//cdn.jsdelivr.net/theaterjs/latest/theater.min.js'></script><script  src="./script.js"></script>
+----->
+
+
+<section class="more">
+
+</section>
+
+
+</body>
+</html>
